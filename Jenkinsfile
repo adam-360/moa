@@ -10,7 +10,7 @@ pipeline {
 
             steps {
                 echo 'building the application...'
-                sh "mvn install"
+                bat"mvn install"
             }
         }
 
