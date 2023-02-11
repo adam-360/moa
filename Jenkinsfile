@@ -10,7 +10,7 @@ pipeline {
 
             steps {
                 echo 'building the application...'
-                bat"mvn clean install -s settings.xml"
+                // bat"mvn clean install -s settings.xml"
             }
         }
 
@@ -18,6 +18,7 @@ pipeline {
 
             steps {
                 echo 'testing the application...'
+                bat "mvn test '-Dtest=moa.classifiers.**.*Test'"
             }
         }
 
