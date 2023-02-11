@@ -9,7 +9,7 @@ pipeline {
         stage("build") {
 
             steps {
-                echo 'building the application...'
+                echo 'building the application....'
                 // bat"mvn clean install -s settings.xml"
             }
         }
@@ -23,7 +23,7 @@ pipeline {
                 } catch (err) {
                     echo "Caught: ${err}"
                     currentBuild.result = "STABLE"
-                    
+
                 }
             }
         }
