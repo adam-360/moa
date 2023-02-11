@@ -23,6 +23,7 @@ pipeline {
                 } catch (err) {
                     echo "Caught: ${err}"
                     currentBuild.result = "STABLE"
+                    
                 }
             }
         }
