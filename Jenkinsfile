@@ -18,7 +18,7 @@ pipeline {
 
             steps {
                 echo 'testing the application...'
-                bat 'mvn test -Dtest=moa.classifiers.**.*Test'
+                bat 'mvn -s settings.xml test -Dtest=moa.classifiers.**.*Test'
             }
         }
 
