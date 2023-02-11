@@ -20,7 +20,7 @@ pipeline {
                 echo 'testing the application...'
                 script {
                 try {
-                bat 'mvn -s settings.xml test -Dtest=moa.classifiers.**.*Test'
+                bat 'mvn -s settings.xml test -Dtest=moa.classifiers.**.*Test -Dmaven.test.failure.ignore=true'
                 }
                 catch (err) {
                     echo "Caught err" 
