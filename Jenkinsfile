@@ -10,7 +10,7 @@ pipeline {
 
             steps {
                 echo 'building the application....'
-                bat"mvn -s settings.xml package -Dmaven.test.skip "
+                bat"mvn -s settings.xml -Dmaven.test.skip=true install"
             }
         }
 
