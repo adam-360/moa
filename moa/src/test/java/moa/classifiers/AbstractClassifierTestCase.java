@@ -355,6 +355,7 @@ extends MoaTestCase {
 	}
 
 	public void testMeasurement() {
-		assertEquals(1, 1);
+		Measurement m = new Measurement("", 1);
+		assertEquals(m.someFunction(), 1);
 	}
 }
