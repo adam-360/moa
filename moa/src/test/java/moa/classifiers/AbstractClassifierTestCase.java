@@ -353,4 +353,8 @@ extends MoaTestCase {
 		for (i = 0; i < output.length; i++)
 			m_TestHelper.deleteFileFromTmp(output[i]);
 	}
+
+	public void testMeasurement() {
+		assertEquals(this.measurements[0].someFunction(), 1);
+	}
 }

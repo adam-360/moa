@@ -116,4 +116,8 @@ public class Measurement extends AbstractMOAObject {
                 sb.append(getValue());
         }
     }
+
+    public int someFunction() {
+		return 1;
+	}
 }
