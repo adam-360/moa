@@ -117,7 +117,7 @@ public class Measurement extends AbstractMOAObject {
         }
     }
 
-    // public int someFunction() {
-	// 	return 1;
-	// }
+    public int someFunction() {
+		return 1;
+	}
 }
