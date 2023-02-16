@@ -2,13 +2,12 @@ pipeline {
     agent any
     tools {
         maven 'Maven'
-        
     }
 
     stages {
         stage("build") {
             steps {
-                echo 'building the application....'
+                echo 'building the application ...'
             }
         }
 
